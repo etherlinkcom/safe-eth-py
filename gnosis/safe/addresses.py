@@ -1087,6 +1087,30 @@ MASTER_COPIES: Dict[EthereumNetwork, List[Tuple[str, int, str]]] = {
         ("0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552", 937241, "1.3.0"),  # v1.3.0
         ("0x3E5c63644E683549055b9Be8653de26E0B4CD36E", 937238, "1.3.0+L2"),  # v1.3.0+L2
     ],
+    EthereumNetwork.ETHERLINK_TESTNET: [
+        (
+            "0xfb1bffC9d739B8D520DaF37dF666da4C687191EA",
+            3826169,
+            "1.3.0+L2",
+        ),  # safe singleton address
+        (
+            "0x69f4D1788e39c87893C980c06EdF4b7f686e2938",
+            3826171,
+            "1.3.0",
+        ),  # safe singleton address
+    ],
+    EthereumNetwork.ETHERLINK: [
+        (
+            "0xfb1bffC9d739B8D520DaF37dF666da4C687191EA",
+            994181,
+            "1.3.0+L2",
+        ),  # safe singleton address
+        (
+            "0x69f4D1788e39c87893C980c06EdF4b7f686e2938",
+            994183,
+            "1.3.0",
+        ),  # safe singleton address
+    ],
 }
 
 PROXY_FACTORIES: Dict[EthereumNetwork, List[Tuple[str, int]]] = {
@@ -1737,5 +1761,11 @@ PROXY_FACTORIES: Dict[EthereumNetwork, List[Tuple[str, int]]] = {
     ],
     EthereumNetwork.GARNET_HOLESKY: [
         ("0xa6B71E26C5e0845f74c812102Ca7114b6a896AB2", 937080),  # v1.3.0
+    ],
+    EthereumNetwork.ETHERLINK_TESTNET: [
+        ("0xC22834581EbC8527d974F8a1c97E1bEA4EF910BC", 3826151),  # v1.3.0
+    ],
+    EthereumNetwork.ETHERLINK: [
+        ("0xC22834581EbC8527d974F8a1c97E1bEA4EF910BC", 994172),  # v1.3.0
     ],
 }
